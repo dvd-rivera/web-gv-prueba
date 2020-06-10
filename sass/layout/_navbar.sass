@@ -1,0 +1,81 @@
+nav 
+    top: 0
+
+
+.navbar__logo 
+    min-width: 80px
+    width: 20vw
+    max-width: 100px
+
+
+.fondo__negro 
+    background-color: rgba($color: $color-principal, $alpha: 1)
+    transition: all 0.5s
+
+
+.fondo__transparente 
+    -webkit-animation: fondo__transparente 0.5s 
+    -moz-animation: fondo__transparente 0.5s 
+    -ms-animation: fondo__transparente 0.5s 
+    -o-animation: fondo__transparente 0.5s 
+    animation: fondo__transparente 0.5s 
+
+
+.menu a 
+    padding: 10px
+    font-weight: 400
+    font-family: 'Open Sans', sans-serif
+    color: white
+    background-color: $color-principal
+    text-decoration: none
+
+    &:active 
+        color: white
+    
+
+    &:hover 
+        color: $color-secundario
+    
+
+
+.navbar .nav-item 
+    font-size: 1.3rem
+
+
+.navbar-dark .navbar-toggler 
+    border: none !important
+
+
+@keyframes fondo__transparente 
+    from  
+        background-color: rgba($color: $color-principal, $alpha: 1)
+    
+
+    to 
+        background-color: rgba($color: $color-principal, $alpha: 0)
+    
+
+
+
+
+@media (min-width: 500px) 
+
+    .navbar .nav-item 
+        font-size: 1rem
+    
+
+
+
+@media (min-width: 992px) 
+
+    .menu a 
+        font-size: 1.3rem
+        padding: 0 20px
+        background-color: rgba($color: red, $alpha: 0)
+    
+
+    .menu a:nth-child(even) 
+        border-right: solid 1px white
+        border-left: solid 1px white
+    
+

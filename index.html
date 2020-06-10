@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Good Vibes</title>
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/3f96579c0b.js"></script>
+        <!-- Fin Fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="navbar__logo" src="assets/img/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler m-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav menu">
+                    <a class="nav-item active" href="#funciones">Funcionalidades</a>
+                    <a class="nav-item" href="#">Planes</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="https://pos.gvapp.cl/login"><button class="btn__iniciar">Iniciar Sesión</button></a>
+                    <a target="_blank" href="https://wa.me/56937368338?text=Hola%20me%20gustaría%20recibir%20más%20información%20del%20servicio"><button class="btn__contacto d-none d-lg-block">Contacto</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="modal-covid-container" class="modal-covid-container">
+        <div class="modal-precontainer">
+            <div class="modal-covid">
+                <img src="assets/img/logo-verde.svg" alt="">
+                <h2>¡Reactiva tu Local!</h2>
+                <div class="modal-img"></div>
+                <p>Con Good Vibes tus comensales podrán enviar sus pedidos directamente a la barra o cocina a través de sus propios celulares, minimizando la cantidad de contactos.</p>
+                <button class="btn-cerrar" onclick="cerrarModal()">Conoce todas las funciones</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="container-fluid">
+        <div class="container">
+            <div class="tittle__container">
+                <h1>GOOD VIBES AUTOPOS</h1>
+                <h2>El punto de venta <br>
+                    <span class="mas">más ágil y rápido</span><br>
+                    <span class="para">Para bares, restaurantes y cafés</span>
+                </h2>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="funciones" class="funciones container-fluid">
+        <div class="container">
+            <div class=" funcion__container">
+                <div class="row">
+                    <div class="col-md-6 d-md-none mb-3">
+                        <div class="funcion__img funcion__img-1"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="funcion__tittle">COMANDAS AUTOMÁTICAS</h1>
+                        <P class="funcion__p">desde el celular del cliente a la barra o cocina.</P>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="funcion__img funcion__img-1 position-relative">
+                            <div class="blanco__der position-abosulte"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="funcion__container">
+                <div class="row">
+                    <div class="col-md-6 d-md-none mb-3">
+                        <div class="funcion__img funcion__img-2"></div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="funcion__img funcion__img-2 position-relative">
+                            <div class="blanco__izq position-abosulte"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="funcion__tittle">MENÚ ONLINE</h1>
+                        <P class="funcion__p">DESDE LA APP DE GOOD VIBES TUS CLIENTES PODRÁN REVISAR TU MENÚ, INCLUSO ANTES DE LLEGAR.</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="funcion__container">
+                <div class="row">
+                    <div class="col-md-6 d-md-none mb-3">
+                        <div class="funcion__img funcion__img-3"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="funcion__tittle">CONTROL EN <br> TODO LUGAR</h1>
+                        <P class="funcion__p">CONSULTA Y CONFIGURA TU LOCAL DESDE CUALQUIER DISPOSITIVO CONECTADO A INTERNET.</P>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="funcion__img funcion__img-3 position-relative">
+                            <div class="blanco__der position-abosulte"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="funcion__container">
+                <div class="row">
+                    <div class="col-md-6 d-md-none mb-3">
+                        <div class="funcion__img funcion__img-4"></div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="funcion__img funcion__img-4 position-relative">
+                            <div class="blanco__izq position-abosulte"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="funcion__tittle">CELEBRA MÁS <br> VENTAS</h1>
+                        <P class="funcion__p">ATIENDE MÁS RÁPIDO, ATIENDE A MAS GENTE.</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="funcion__container">
+                <div class="row">
+                    <div class="col-md-6 d-md-none mb-3">
+                        <div class="funcion__img funcion__img-5"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="funcion__tittle">ACTUALIZACIONES <br> PERIODICAS</h1>
+                        <P class="funcion__p">EL EQUIPO DE GOOD VIBES TRABAJA SIEMPRE PARA ENTREGAR LA MEJOR EXPERIENCIA.</P>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="funcion__img funcion__img-5 position-relative">
+                            <div class="blanco__der position-abosulte"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section id="planes" class="planes container-fluid">
+        <div class="container planes__container">
+            <h2>PLANES</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 traen">
+                    <h3>TODOS LOS PLANES TRAEN</h3>
+                    <ul>
+                        <li>Carta Menú Online</li>
+                        <li>Aparece en el buscador de la app</li>
+                        <li>Impresoras para las cocinas y barras</li>
+                        <li>Códigos QR adhesivos para todas tus mesas</li>
+                        <li>Página administración para 1 sucursal</li>
+                        <li>Administración de usuarios</li>
+                        <li>Constrol de stock simple</li>
+                        <li>Administrador de productos, ingredientes, combos y promociones</li>
+                        <li>Cierre de caja y reporte de ingresos/egresos</li>
+                        <li>Reporte de propinas para meseros</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-8">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="banner">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">       
+                    <h1 class="mb-4">Y PODEMOS MEJORAR <br> AÚN MAS TU LOCAL!</h1>
+                    <a target="_blank" href="https://wa.me/56937368338?text=Hola%20me%20gustaría%20recibir%20más%20información%20del%20servicio"><button class="btn__contacto-2" >CONTACTANOS</button></a>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="banner__img d-none d-none d-md-block"></div>
+                </div>
+            </div>
+        </div>
+        <div class="banner__img d-sm-none"></div>
+    </section>
+
+    <footer>
+        <address class="container footer__datos">
+            <img src="assets/img/logo-blanco-completo.svg" alt="">
+            <ul>
+                <li class="li__tittle">Contáctanos</li>
+                <li>contacto@gvapp.cl</li>
+                <li>+56 9 3736 8338</li>
+                <li class="redes"><a href="https://www.facebook.com/GoodVibes-774993406210650"><i class="fab fa-facebook-square"></a></i><i class="fab fa-instagram-square ml-2"></i></li>
+            </ul>
+        </address>
+        <p>Good Vibes 2020. Todos los Derechos reservados</p>
+    </footer>
+
+
+    <script   src="assets/js/load-modal.js"></script>
+<!-- jquery -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- jsnavbar -->
+    <script src="assets/js/navbar.js"></script>
+<!-- scrollreveal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+<script src="assets/js/scrollreveal.js"></script>
+<!-- jsjsjsjsjsjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

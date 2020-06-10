@@ -1,0 +1,102 @@
+header 
+    background-image: url(../img/background.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    width: 100vw
+    height: 100vh
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 75% 95%, 0 90%)
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 75% 95%, 0 90%)
+
+
+.tittle__container 
+    padding: 10px
+    padding-top: 90px
+    color: white
+    font-family: 'Raleway', sans-serif
+
+
+.tittle__container h1 
+    font-weight: 800
+    font-size: 5vw
+    margin: 0
+
+
+.tittle__container h2 
+    font-size: 10vw
+    transition: all
+
+
+.tittle__container h2 .mas 
+    font-weight: 800
+    font-size: 13vw
+    transition: all
+
+
+.tittle__container h2 .para 
+    font-weight: 800
+    font-size: 1rem
+    text-transform: uppercase
+    transition: all
+
+
+.header__funciones 
+    background: rgb(255,255,255)
+    background: linear-gradient(90deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%)
+    padding: 20px
+    width: 350px
+    height: 120px
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-weight: 700
+
+
+.header__funciones-tittle 
+    font-size: 1rem
+    color: $color-secundario
+
+
+.header__funciones-p 
+    color: $color-secundario
+    margin: 0
+
+
+.funciones__icon 
+    max-width: 80px
+
+
+@media (min-width: 996px) 
+
+    header 
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 75% 92%, 0 82%)
+        clip-path: polygon(0 0, 100% 0, 100% 83%, 75% 92%, 0 82%)
+    
+
+    .tittle__container 
+        padding-top: 120px
+    
+    
+    .tittle__container h1 
+        font-size: 1.5rem
+    
+
+    .tittle__container h2 
+        font-size: 2.5rem
+        transition: all
+    
+
+    .tittle__container h2 .mas 
+        font-weight: 800
+        font-size: 3.5rem
+    
+
+    .tittle__container h2 .para 
+        margin-top: 10px
+        font-weight: 800
+        font-size: 1rem
+        line-height: 1rem
+        text-transform: uppercase
+        transition: all
+    
