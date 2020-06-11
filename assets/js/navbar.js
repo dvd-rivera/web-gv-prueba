@@ -9,3 +9,8 @@ window.onscroll = () => {
         nav.classList.add('fondo__negro');
     }
 }
+
+function navBtn() {
+    nav.classList.toggle("fondo__verde")
+    nav.classList.toggle("pb-4")
+}

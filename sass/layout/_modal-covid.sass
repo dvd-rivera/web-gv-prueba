@@ -28,6 +28,8 @@
     position: relative
     +md
         font-size: 1.2rem
+        min-height: 600px
+        min-width: 350px
     
     button
         border: none
@@ -38,6 +40,8 @@
         font-weight: 700
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3)
         cursor: pointer
+        +md
+            margin-top: 20px
 
     img
         width: 70px
@@ -46,6 +50,9 @@
         font-weight: 700
         color: $color-principal
         margin-top: 20px
+        +md
+            margin-bottom: 20px
+            font-size: 3rem
 
     p
         margin-top: 20px
@@ -57,3 +64,5 @@
         background-size: cover
         width: 100%
         height: 100px
+        +md
+            height: 150px

@@ -9,6 +9,7 @@ nav .navbar-nav button
     height: 40px
     font-family: 'Open Sans', sans-serif
     font-size: 1rem
+    margin-left: 10px
 
 .btn__iniciar 
     border: 1px white solid
@@ -23,11 +24,11 @@ nav .navbar-nav button
 
 .btn__contacto 
     border: 1px $color-secundario solid
-    background-color: $color-secundario
-    color: white
+    color: $color-principal
     padding: 5px 20px
     margin-left: 20px
     font-weight: 700
+    animation: btnResaltado 1s ease-in-out infinite
 
     &:hover         
         box-shadow: inset 100% 0 0 0 $color-principal
@@ -45,3 +46,12 @@ nav .navbar-nav button
 
 a:hover
     text-decoration: none
+
+@keyframes btnResaltado
+    0%
+        background-color: $color-secundario
+    50%
+        background-color: #9fad00
+    100%
+        background-color: $color-secundario
+        

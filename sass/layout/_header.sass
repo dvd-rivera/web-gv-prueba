@@ -2,35 +2,71 @@ header
     background-image: url(../img/background.jpg)
     background-size: cover
     background-repeat: no-repeat
-    background-position: center
+    background-position: -400px center
     width: 100vw
     height: 100vh
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 75% 95%, 0 90%)
     clip-path: polygon(0 0, 100% 0, 100% 91%, 75% 95%, 0 90%)
+    +md
+        background-position: center
+
 
 
 .tittle__container 
     padding: 10px
     padding-top: 90px
+    padding-left: 0
+    color: white
+    font-family: 'Raleway', sans-serif
+    +md
+        padding-top: 150px
+
+.locales
     color: white
     font-family: 'Raleway', sans-serif
 
+    .locales__container
+        color: white
+        overflow: hidden
+        height: 40px
+        +md
+            height: 60px
+    p
+        font-size: 1.5rem
+        font-weight: 700
+        margin: 0
+        +md
+            font-size: 2rem
+    ul
+        list-style: none
+        padding-left: 0
+        animation: locales 5s ease-in-out infinite
 
-.tittle__container h1 
+    li
+        font-size: 2rem
+        font-weight: 700
+        height: 40px
+        color: $color-secundario
+        text-decoration: underline
+        +md
+            font-size:  2.5rem
+            height: 60px
+
+
+.tittle__container h1
     font-weight: 800
-    font-size: 5vw
-    margin: 0
-
-
-.tittle__container h2 
-    font-size: 10vw
+    font-size: 7vw
     transition: all
+    +md
+        font-size: 4vw
 
 
-.tittle__container h2 .mas 
+.tittle__container h1 .mas 
     font-weight: 800
     font-size: 13vw
     transition: all
+    +md
+        font-size: 7vw
 
 
 .tittle__container h2 .para 
@@ -66,37 +102,51 @@ header
 .funciones__icon 
     max-width: 80px
 
+@keyframes locales
+    0%
+        margin-top: 0
+    15%
+        margin-top: 0
+    20%
+        margin-top: -40px
+    35%
+        margin-top: -40px
+    40%
+        margin-top: -80px
+    55%
+        margin-top: -80px
+    60%
+        margin-top: -120px
+    75%
+        margin-top: -120px
+    80%
+        margin-top: -80px
+    90%
+        margin-top: -40px
+    100%
+        margin-top: 0
 
-@media (min-width: 996px) 
-
-    header 
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 75% 92%, 0 82%)
-        clip-path: polygon(0 0, 100% 0, 100% 83%, 75% 92%, 0 82%)
-    
-
-    .tittle__container 
-        padding-top: 120px
-    
-    
-    .tittle__container h1 
-        font-size: 1.5rem
-    
-
-    .tittle__container h2 
-        font-size: 2.5rem
-        transition: all
-    
-
-    .tittle__container h2 .mas 
-        font-weight: 800
-        font-size: 3.5rem
-    
-
-    .tittle__container h2 .para 
-        margin-top: 10px
-        font-weight: 800
-        font-size: 1rem
-        line-height: 1rem
-        text-transform: uppercase
-        transition: all
-    
++md
+    @keyframes locales
+        0%
+            margin-top: 0
+        15%
+            margin-top: 0
+        20%
+            margin-top: -60px
+        35%
+            margin-top: -60px
+        40%
+            margin-top: -120px
+        55%
+            margin-top: -120px
+        60%
+            margin-top: -180px
+        75%
+            margin-top: -180px
+        80%
+            margin-top: -120px
+        90%
+            margin-top: -60px
+        100%
+            margin-top: 0

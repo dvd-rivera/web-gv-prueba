@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169191631-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169191631-1');
+    </script>
+    <!-- FIN Global site tag (gtag.js) - Google Analytics -->
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Good Vibes</title>
-    
         <!-- Fontawesome -->
         <script src="https://kit.fontawesome.com/3f96579c0b.js"></script>
         <!-- Fin Fontawesome -->
@@ -20,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="navbar__logo" src="assets/img/logo.svg" alt="logo"></a>
-            <button class="navbar-toggler m-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button onclick="navBtn()" id="nav__button" class="navbar-toggler m-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -40,7 +52,7 @@
         <div class="modal-precontainer">
             <div class="modal-covid">
                 <img src="assets/img/logo-verde.svg" alt="">
-                <h2>¡Reactiva tu Local!</h2>
+                <h2>¡Reactiva <wbr> tu Local!</h2>
                 <div class="modal-img"></div>
                 <p>Con Good Vibes tus comensales podrán enviar sus pedidos directamente a la barra o cocina a través de sus propios celulares, minimizando la cantidad de contactos.</p>
                 <button class="btn-cerrar" onclick="cerrarModal()">Conoce todas las funciones</button>
@@ -51,11 +63,21 @@
     <header class="container-fluid">
         <div class="container">
             <div class="tittle__container">
-                <h1>GOOD VIBES AUTOPOS</h1>
-                <h2>El punto de venta <br>
-                    <span class="mas">más ágil y rápido</span><br>
-                    <span class="para">Para bares, restaurantes y cafés</span>
-                </h2>
+                <h1>El punto de venta <br>
+                    <span class="mas">más ágil y <br> rápido</span>
+                </h1>
+            </div>
+            <div class="locales">
+                <p>Para</p>
+                <div class="locales__container">
+                    <ul class="locales__lista">
+                        <li class="local">RESTAURANTES</li>
+                        <li class="local">PUBs</li>
+                        <li class="local">BARES</li>
+                        <li class="local">CAFES</li>
+                    </ul>                    
+                </div>
+
             </div>
         </div>
     </header>
@@ -184,7 +206,7 @@
             <div class="row d-flex align-items-center">
                 <div class="col-md-6">       
                     <h1 class="mb-4">Y PODEMOS MEJORAR <br> AÚN MAS TU LOCAL!</h1>
-                    <a target="_blank" href="https://wa.me/56937368338?text=Hola%20me%20gustaría%20recibir%20más%20información%20del%20servicio"><button class="btn__contacto-2" >CONTACTANOS</button></a>
+                    <a target="_blank" href="https://wa.me/56937368338?text=Hola%20me%20gustaría%20recibir%20más%20información%20del%20servicio" class="mx-auto"><button class="btn__contacto-2" >CONTACTANOS</button></a>
                 </div>
                 <div class="col-md-6 ">
                     <div class="banner__img d-none d-none d-md-block"></div>
